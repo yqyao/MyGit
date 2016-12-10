@@ -1,0 +1,10 @@
+make 
+you will creat add.so
+if you do :
+    python add.py 
+    it will print time about 5 second
+    this is the origin python 
+if you do:
+    py test.py
+    it will print only 0.7 second
+    this is the cython
