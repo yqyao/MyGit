@@ -7,7 +7,7 @@ why 用这个？
 
 Supervisor介绍
 ---
->Supervisor(http://supervisord.org/)是一个 Python 开发的 client/server 系统，可以管理和监控类 UNIX操作系统上面的进程。它可以同时启动，关闭多个进程，使用起来特别的方便
+>[Supervisor](http://supervisord.org/ "悬停显示") 是一个 Python 开发的 client/server 系统，可以管理和监控类 UNIX操作系统上面的进程。它可以同时启动，关闭多个进程，使用起来特别的方便
 
 组成部分
 ---
