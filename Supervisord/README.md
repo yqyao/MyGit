@@ -67,6 +67,13 @@ supervisorctl stop all，停止所有进程（注：start、restart、stop都不
 supervisorctl reload, 载入最新的配置文件<br>
 supervisorctl update，根据最新配置文件，启动新配置或有改动的进程，配置没有改动的进程不会受影响重启<br>
 
+扩展阅读
+---
+>superviord 只能实现单机的进程管理，如果需要实现多机器同时显示并管理<br>
+官方推荐有几个开源的项目:<br>
+[Nodevisor](https://github.com/TAKEALOT/nodervisor)<br>
+[Supervisord-Monitor](https://github.com/mlazarov/supervisord-monitor)<br>
+
 
 
 
