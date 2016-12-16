@@ -137,10 +137,11 @@ def StructTest():
     pAB.a = 1
     pAB.b = 2
     return pAB[0]
-    ```
-  **说明：**
-  **Cython里结构体的定义比较像C++的语法，即在声明一个结构体变量时不用在结构体名前再加上struct关键字**<br>
-  **在C,C++代码里，返回一个结构体变量时，会把结构体转成Python的dict对象**
+```
+
+**说明**
+**Cython里结构体的定义比较像C++的语法，即在声明一个结构体变量时不用在结构体名前再加上struct关键字**<br>
+**在C,C++代码里，返回一个结构体变量时，会把结构体转成Python的dict对象**
 
 ####枚举
   ```python
@@ -167,14 +168,3 @@ def StructTest():
 
 [参考链接](http://blog.csdn.net/i2cbus/article/details/23791309)
   
-  
-    
-
-
-
-
-
-
-
-
-
