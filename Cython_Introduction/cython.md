@@ -164,6 +164,8 @@ def StructTest():
 *注意：*
 **定义的结构体以及枚举类型可集中写在一个头文件内，后缀为.pyd**
 ###Cython 中的类(用法同函数)
+
+[参考链接](http://blog.csdn.net/i2cbus/article/details/23791309)
   
   
     
