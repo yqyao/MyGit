@@ -29,6 +29,7 @@ python setup.py build
 >>>helloworld.SayHello() 
 hello,world
 ```
+
 ##Cython 类型
 ###类型定义  
 * 定义一个C变量
@@ -45,6 +46,7 @@ b = [1,2,3]
 a = 'hello,world'
 ```
 与python无区别
+
 ###类型转换
 ```python
 cdef float a= 123.456
@@ -54,6 +56,7 @@ b = <int>a
 **在Cython里用<>替代了()来进行类型转换**<br>
 注意问题：  
 **以Cython里不能用类似*ptr这样代码来对指针变量进行取值，而必须用ptr[0]这样的形式**<br>
+
 ##Cython 函数编写
 * python 方法（add.py）
 ```python
@@ -76,6 +79,7 @@ print time.time() - st
 ```
 * cython 代码(add.pyx)
 ``` python
+cdef extern from "math.h": 
     float cosf(float theta)  
     float sinf(float theta)  
     float acosf(float theta)
@@ -100,6 +104,7 @@ def test_add():
     
  ```
  **注意这里只讨论python 调c的情况**<br>
+
 ###Cython 结构体，枚举等其他类型<br>
 ####结构体(1)
  ```
@@ -116,6 +121,7 @@ def test_add():
 **注意：**  
 **Cython里没有->的操作符，用"."替代"->"**  
 **Cython里不能用*来对指针变量取值，用[0]替代**
+
 ####结构体(2)
  ```python
  cdef struct AB:
@@ -135,6 +141,7 @@ def StructTest():
   **说明：**
   **Cython里结构体的定义比较像C++的语法，即在声明一个结构体变量时不用在结构体名前再加上struct关键字**<br>
   **在C,C++代码里，返回一个结构体变量时，会把结构体转成Python的dict对象**
+
 ####枚举
   ```python
   cdef enum MyEnum:
