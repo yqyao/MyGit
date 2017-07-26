@@ -17,10 +17,10 @@ web 页面部分（其实这个不算是一部分，但是也相对于前面独�
 
 安装与配置
 ---
-###安装
+### 安装
 pip install supervisor (centos)<br>
 生成指定的配置文件：echo_supervisord_conf > supervisord.conf<br>
-###配置
+### 配置
 **[unix_http_server]**<br>
 ;file=/tmp/supervisor.sock   ; (the path to the socket file)<br>
 ;修改为 /var/run 目录，避免被系统删除<br>
