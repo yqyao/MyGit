@@ -8,6 +8,8 @@ import javax.ws.rs.core.Form;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.junit.Test;
+
 public class JerseyClient {
 	public final static String get_text_path = "http://localhost:80/WebProject/test/get_text";
 	public final static String post_form_path = "http://localhost:80/WebProject/test/post_form";
@@ -115,16 +117,15 @@ public class JerseyClient {
 		response.close();
 	}
 	
-	public static void main(String args[]) {
+	@Test
+	public void test() {
 		getXml();
 		getText();
 		getJson();
 		postForm();
 		postJson();
 		putJson();
-		putText();
+		putText();	
 		client.close();
 	}
-	
-
 }

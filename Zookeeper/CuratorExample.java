@@ -18,6 +18,7 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.curator.utils.ZKPaths;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.Watcher;
+import org.junit.Test;
 
 public class CuratorExample {
 	public static final String CONNECTION_STRING = "101.201.118.55:2181";
@@ -146,7 +147,9 @@ public class CuratorExample {
 		System.out.println("path: "+ path + "\t" + "data: "+ data);
 	}
 	
-	public static void main(String args[]) throws Exception {
+	
+	@Test
+	public void test() throws Exception {
 		CuratorFramework client = getClient();
 		create(client, TEST_PATH, "createSimple".getBytes());
 		myprint(getData(client, TEST_PATH), TEST_PATH);
@@ -182,6 +185,4 @@ public class CuratorExample {
 		delete(client, TEST_PATH);
 		
 	}
-	
-	
 }
